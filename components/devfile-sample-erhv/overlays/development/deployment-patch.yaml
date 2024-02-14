@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-erhv
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/pmacik-testing/tkwch-fix-0075-0008-tenant/tkwch-fix-0075-0008-app/devfile-sample-erhv@sha256:23759c182fd343d52f83fa23a378f17632f05118757c575c2650856be2144f75
+        name: my-nodejs
+        resources: {}
+status: {}
